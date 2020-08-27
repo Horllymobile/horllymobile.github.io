@@ -1,0 +1,3 @@
+<app-progress-bar [qouteCountIn] = "quotes.length" [maxQouteIn] = "maxQoute"></app-progress-bar>
+<app-add-quote (qoute) = "addNewQuote($event)"></app-add-quote>
+<app-quote-list [quotesArray] = "quotes" (quoteIndex) = "deleteQuote($event)"></app-quote-list>

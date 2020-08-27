@@ -1,0 +1,12 @@
+<div class="row mt-4">
+    <div class="col-lg-3" *ngFor="let quote of quotesArray; let quoteIndex = index" (click) = "deleteQuote(quoteIndex)">
+        <div class="card border-primary">
+            <div class="card-header bg-primary">
+                <h4 class="card-title text-white">Quote</h4>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{ quote }}</p>
+            </div>
+        </div>
+    </div>
+</div>
